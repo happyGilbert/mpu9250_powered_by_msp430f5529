@@ -611,18 +611,18 @@ void MPUCLASS::runSelfTest(void)
          * MPL expects biases in hardware units << 16, but self test returns
 		 * biases in g's << 16.
 		 */
-    	unsigned short accel_sens;
-    	float gyro_sens;
+    	unsigned short test_accel_sens = 32768/2;
+    	float test_gyro_sens = 32768/250;
 
-		mpu_get_accel_sens(&accel_sens);  //TODO:fix here!! in self test function, xxx_sens use the pre-difine test->xxx_sens, it can be got via mpu_get_accel_sens.
-		accel[0] *= accel_sens;
-		accel[1] *= accel_sens;
-		accel[2] *= accel_sens;
+//		mpu_get_accel_sens(&accel_sens);
+		accel[0] *= test_accel_sens;
+		accel[1] *= test_accel_sens;
+		accel[2] *= test_accel_sens;
 		inv_set_accel_bias(accel, 3);
-		mpu_get_gyro_sens(&gyro_sens);
-		gyro[0] = (long) (gyro[0] * gyro_sens);
-		gyro[1] = (long) (gyro[1] * gyro_sens);
-		gyro[2] = (long) (gyro[2] * gyro_sens);
+//		mpu_get_gyro_sens(&gyro_sens);
+		gyro[0] = (long) (gyro[0] * test_gyro_sens);
+		gyro[1] = (long) (gyro[1] * test_gyro_sens);
+		gyro[2] = (long) (gyro[2] * test_gyro_sens);
 		inv_set_gyro_bias(gyro, 3);
 		if(MPUCLASS::saveMplState() != 0)
 		{
