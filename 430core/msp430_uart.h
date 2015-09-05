@@ -48,7 +48,6 @@ private:
 
 extern HardwareSerial Serial;
 
-uint8_t sendData(void *p, uint8_t *dat, uint8_t length);
 
 #endif
 #endif
