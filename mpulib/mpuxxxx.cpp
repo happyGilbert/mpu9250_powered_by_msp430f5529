@@ -1,5 +1,5 @@
 /*
- * mpu9250.cpp
+ * mpuxxxx.cpp
  *
  *  Created on: 2015Äê8ÔÂ28ÈÕ
  *      Author: jfanl
@@ -9,7 +9,7 @@
 #include <string.h>
 #include <msp430.h>
 
-#include "mpu9250.h"
+#include "mpuxxxx.h"
 #include "HAL_FLASH.h"
 #include "log_msp430.h"
 #include "msp430_interrupt.h"

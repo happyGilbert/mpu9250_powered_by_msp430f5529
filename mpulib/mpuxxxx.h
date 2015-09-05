@@ -1,12 +1,12 @@
 /*
- * mpu9250.h
+ * mpuxxxx.h
  *
  *  Created on: 2015Äê8ÔÂ29ÈÕ
  *      Author: jfanl
  */
 
-#ifndef _MPU9250_H_
-#define _MPU9250_H_
+#ifndef _MPUXXXX_H_
+#define _MPUXXXX_H_
 
 #define PEDO_READ_MS    (1000)
 #define TEMP_READ_MS    (500)
@@ -59,4 +59,4 @@ private:
 
 extern MPUCLASS mpu9250;
 
-#endif /* _MPU9250_H_ */
+#endif /* _MPUXXXX_H_ */

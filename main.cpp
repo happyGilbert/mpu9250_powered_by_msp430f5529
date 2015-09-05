@@ -6,7 +6,7 @@
 #include "msp430_clock.h"
 #include "msp430_i2c.h"
 #include "msp430_interrupt.h"
-#include "mpu9250.h"
+#include "mpuxxxx.h"
 
 
 

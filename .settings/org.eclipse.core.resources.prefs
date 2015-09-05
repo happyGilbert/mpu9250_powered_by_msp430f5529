@@ -1,6 +1,8 @@
 eclipse.preferences.version=1
 encoding//Debug/430core/F5xx_F6xx_Core_Lib/subdir_rules.mk=UTF-8
 encoding//Debug/430core/F5xx_F6xx_Core_Lib/subdir_vars.mk=UTF-8
+encoding//Debug/430core/TransportLayer/subdir_rules.mk=UTF-8
+encoding//Debug/430core/TransportLayer/subdir_vars.mk=UTF-8
 encoding//Debug/430core/subdir_rules.mk=UTF-8
 encoding//Debug/430core/subdir_vars.mk=UTF-8
 encoding//Debug/makefile=UTF-8
